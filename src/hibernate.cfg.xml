@@ -9,7 +9,11 @@
         <!-- JDBC Database connection settings -->
         <property name="connection.driver_class">org.postgresql.Driver</property>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <property name="connection.url">jdbc:postgresql://localhost:5433/hb-03-one-to-many</property>
+=======
+        <property name="connection.url">jdbc:postgresql://localhost:5433/hb-01-one-to-one-uni</property>
+>>>>>>> branch 'master' of https://github.com/rafaelpossenti/hb-03-one-to-many.git
 =======
         <property name="connection.url">jdbc:postgresql://localhost:5433/hb-01-one-to-one-uni</property>
 >>>>>>> branch 'master' of https://github.com/rafaelpossenti/hb-03-one-to-many.git
