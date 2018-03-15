@@ -8,7 +8,7 @@ import com.luv2code.springdemo.entity.Course;
 import com.luv2code.springdemo.entity.Instructor;
 import com.luv2code.springdemo.entity.InstructorDetail;
 
-public class CreateCoursesDemo {
+public class GetInstructorCoursesDemo {
 	public static void main(String Args[]) {
 		
 		// create session factory
@@ -28,16 +28,12 @@ public class CreateCoursesDemo {
 			
 			int theId = 1; 
 			
-			Instructor tempInstructor = session.get(Instructor.class,theId);
+			Course tempCourse = session.get(Course.class,theId);
 			
-			Course tempCourse1 = new Course("Air Guitar - The ultimate guide");
-			Course tempCourse2 = new Course("The pinball Masterclass");
+			System.out.println("course " + tempCourse);
 			
-			tempInstructor.add(tempCourse1);
-			tempInstructor.add(tempCourse2);
+			session.delete(tempCourse);
 			
-			session.save(tempCourse1);
-			session.save(tempCourse2);
 			//commit transaction
 			session.getTransaction().commit();
 			
