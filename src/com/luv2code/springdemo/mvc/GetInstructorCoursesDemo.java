@@ -32,6 +32,7 @@ public class GetInstructorCoursesDemo {
 			
 			System.out.println("course " + tempCourse);
 			
+			//delete course in database
 			session.delete(tempCourse);
 			
 			//commit transaction
