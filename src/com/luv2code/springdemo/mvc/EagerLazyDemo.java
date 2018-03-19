@@ -30,9 +30,8 @@ public class EagerLazyDemo {
 			
 			Instructor tempInstructor = session.get(Instructor.class,theId);
 			
+			//get the data  Instructor|courses
 			System.out.println("Instructor: " + tempInstructor);
-			
-			
 			System.out.println("Courses " + tempInstructor.getCourses());
 			
 			//commit transaction
