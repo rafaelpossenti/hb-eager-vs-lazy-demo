@@ -37,6 +37,7 @@ public class FetchJoinDemo {
 			
 			query.setParameter("theInstructorId", theId);
 			
+			//return the query
 			Instructor tempInstructor = query.getSingleResult();
 			
 			//get the data  Instructor|courses
