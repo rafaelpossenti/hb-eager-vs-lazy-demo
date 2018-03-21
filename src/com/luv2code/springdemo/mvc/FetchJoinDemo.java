@@ -24,7 +24,6 @@ public class FetchJoinDemo {
 		Session session = factory.getCurrentSession();
 		
 		try {
-			// start a transaction 
 			session.beginTransaction();
 			
 			int theId = 1; 
@@ -37,6 +36,7 @@ public class FetchJoinDemo {
 			
 			query.setParameter("theInstructorId", theId);
 			
+			//return the query
 			Instructor tempInstructor = query.getSingleResult();
 			
 			//get the data  Instructor|courses
