@@ -28,6 +28,7 @@ public class FetchJoinDemo {
 			
 			int theId = 1; 
 			
+			//add
 			Query<Instructor> query = 
 					session.createQuery("select i from Instructor i "
 									+ "JOIN FETCH i.courses "
